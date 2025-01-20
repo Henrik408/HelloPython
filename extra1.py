@@ -44,6 +44,65 @@ for first, second, third in buttons:
 file.writelines(["LINE1\n", "Line2\n"])
 file.close() """
 
+# Bonus Example
 
-contents = ["abcd","defg", "hijk"]
-filename = ["erster.txt"."zweiter.txt". "dritter.txt"]
+""" a = [1,2,3]
+b = [10,20,30]
+x = list(zip(a,b))
+
+# print(list(x))
+
+for item1, item2 in x:
+    print(item1, item2)
+    print("HuHu")    
+
+print(list(x)) """
+#----------------------------
+""" contents = ["abcd11",
+            "defg11",
+             "hijk11"]
+filenames = ["erster.txt","zweiter.txt", "dritter.txt"]
+
+for content, filename in zip(contents,filenames):
+    file = open(rf"files\{filename}","+w")
+    file.write(content) """
+
+#-----------------------------------
+
+""" file = open("bear.txt","r")
+file_contents = file.readlines()
+file.close()
+
+for lines in file_contents:
+    print(lines)
+
+print("huHu") """
+
+
+#-----------------------------------
+
+""" File essay.txt
+The true meaning of obscurity lies underneath the most delicate structures 
+of viscosity. The idea of changing that balance is obscure by itself. """
+
+file = open("essay.txt","r")
+file_contents = file.readlines()
+file.close()
+
+for line in file_contents:
+    print(f"The file contains {len(line)} characters")
+   
+   # print(line.title())
+
+# Corrected
+
+# Open the file in read mode
+file = open("essay.txt", "r")
+file_contents = file.read()  # Read the entire content as a single string
+file.close()
+
+# Calculate the total number of characters
+num_characters = len(file_contents)
+
+# Print the result
+print(f"The file contains {num_characters} characters.")
