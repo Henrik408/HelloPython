@@ -39,7 +39,11 @@ menu = ["pasta", "pizza", "salad"]
 for first, second, third in buttons:
     print(first, second, third) """
 
-file = open("whatever.txt","w")
+""" file = open("whatever.txt","w")
 # file.write("Das ist ein Test")
 file.writelines(["LINE1\n", "Line2\n"])
-file.close()
+file.close() """
+
+
+contents = ["abcd","defg", "hijk"]
+filename = ["erster.txt"."zweiter.txt". "dritter.txt"]
