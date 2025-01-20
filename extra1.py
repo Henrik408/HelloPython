@@ -35,6 +35,11 @@ menu = ["pasta", "pizza", "salad"]
 #     print(i,j)
 #     print(f"{i}.{j}")
 
-buttons = [('John', 'Sen', 'Morro'), ('Lin', 'Ajay', 'Filip')]
+""" buttons = [('John', 'Sen', 'Morro'), ('Lin', 'Ajay', 'Filip')]
 for first, second, third in buttons:
-    print(first, second, third)
+    print(first, second, third) """
+
+file = open("whatever.txt","w")
+# file.write("Das ist ein Test")
+file.writelines(["LINE1\n", "Line2\n"])
+file.close()
