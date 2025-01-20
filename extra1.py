@@ -46,4 +46,4 @@ file.close() """
 
 
 contents = ["abcd","defg", "hijk"]
-filename = ["erster.txt"."zweiter.txt". "dritter.txt"]
+filename = ["erster.txt","zweiter.txt", "dritter.txt"]
